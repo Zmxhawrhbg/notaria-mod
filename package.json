@@ -1,0 +1,16 @@
+{
+  "name": "notariamod",
+  "version": "0.0.9",
+  "description": "discord bot created to store values based on user",
+  "main": "bot.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "zmxhawrhbg",
+  "license": "ISC",
+  "dependencies": {
+    "discord.js": "^11.3.2",
+    "erlpack": "github:hammerandchisel/erlpack",
+    "uws": "^10.148.1"
+  }
+}
