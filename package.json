@@ -1,6 +1,6 @@
 {
   "name": "notariamod",
-  "version": "0.0.9",
+  "version": "1.0.1",
   "description": "discord bot created to store values based on user",
   "main": "bot.js",
   "scripts": {
@@ -12,5 +12,12 @@
     "discord.js": "^11.3.2",
     "erlpack": "github:hammerandchisel/erlpack",
     "uws": "^10.148.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Zmxhawrhbg/notaria-mod.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Zmxhawrhbg/notaria-mod/issues"
   }
 }
