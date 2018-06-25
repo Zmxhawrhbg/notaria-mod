@@ -71,7 +71,7 @@ module.exports = {
 
           fs.writeFileSync('./values.json', JSON.stringify(valueslist));
 
-          commandmodules.setmessage(`${toTitleCase(label.replace('`', '\\`'))}`, `${user}'s ${label.replace('`', '\\`')} is \`${value.replace('`', '')}${type == 2 ? '%' : ''}\`!`, message);
+          commandmodules.setmessage(`${toTitleCase(label.replace('`', '\\`'))}`, `${user}'s ${label.replace('`', '\\`')} is \`${value}${type == 2 ? '%' : ''}\`!`, message);
         });
       });
     }
