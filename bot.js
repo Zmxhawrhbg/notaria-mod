@@ -61,12 +61,8 @@ client.on('message', message => {
       return senderror('I can\'t execute that command inside DMs!', message);
     }
 
-    if (command.adminOnly && !message.member.hasPermission(8, false, true, true)) {
+    if (command.adminOnly && !message.member.hasPermission('MANAGE_MESSAGES', false, true, true)) {
       return senderror('Only people with admin permissions can use this command', message);
-    }
-
-    if (command.adminOnly && !message.member.user.id == 100711360979034112) {
-      return senderror('This command is for testing, thus only the owner can use it!', message);
     }
 
     if (command.args && !args.length) {
