@@ -62,7 +62,7 @@ client.on('message', message => {
     }
 
     if (command.adminOnly && !message.member.hasPermission('MANAGE_MESSAGES', false, true, true)) {
-      return senderror('Only people with admin permissions can use this command', message);
+      return senderror('Only people with permissions to manage messages can use this command', message);
     }
 
     if (command.args && !args.length) {
