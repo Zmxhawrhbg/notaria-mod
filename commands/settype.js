@@ -53,7 +53,7 @@ module.exports = {
 
         guildsettings[guildid].type = inttype;
 
-        fs.writeFile('./guildsettings.json', JSON.stringify(guildsettings));
+        fs.writeFileSync('./guildsettings.json', JSON.stringify(guildsettings));
 
         fs.readFile('./values.json', function(valueserror, valuesdata) {
           // clearing out the old existing values
@@ -62,7 +62,7 @@ module.exports = {
 
           values[guildid] = {};
 
-          fs.writeFile('./values.json', JSON.stringify(values));
+          fs.writeFileSync('./values.json', JSON.stringify(values));
 
           let oldtypestr = oldtype;
 
