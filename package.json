@@ -1,6 +1,6 @@
 {
   "name": "notariamod",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "discord bot created to store values based on user",
   "main": "bot.js",
   "scripts": {

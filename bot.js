@@ -16,7 +16,7 @@ for (const file of commandFiles) {
 const cooldowns = new Discord.Collection();
 
 client.on('ready', () => {
-  console.log('Ready!');
+  console.log('Ready! ~ Version 1.02');
   client.user.setActivity(`something fun! ~ try using ${defaultprefix} to talk to me!`);
 });
 
