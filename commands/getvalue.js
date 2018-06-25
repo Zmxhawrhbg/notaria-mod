@@ -69,7 +69,7 @@ module.exports = {
 
           }
 
-          fs.writeFile('./values.json', JSON.stringify(valueslist));
+          fs.writeFileSync('./values.json', JSON.stringify(valueslist));
 
           commandmodules.setmessage(`${toTitleCase(label.replace('`', '\\`'))}`, `${user}'s ${label.replace('`', '\\`')} is \`${value.replace('`', '')}${type == 2 ? '%' : ''}\`!`, message);
         });

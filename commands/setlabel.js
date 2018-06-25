@@ -22,8 +22,6 @@ module.exports = {
 
         let oldlabel = defaultlabel;
 
-        console.log(guildsettings[guildid]['prefix']);
-
         let guildprefix = defaultprefix;
 
         if (guildsettings[guildid] != undefined) {
@@ -52,7 +50,7 @@ module.exports = {
         guildsettings[guildid].label = newlabel;
 
 
-        fs.writeFile('./guildsettings.json', JSON.stringify(guildsettings));
+        fs.writeFileSync('./guildsettings.json', JSON.stringify(guildsettings));
 
         commandmodules.setmessage('Label changed!', `Label changed from \`${oldlabel}\` to \`${newlabel}\`!`, message);
 

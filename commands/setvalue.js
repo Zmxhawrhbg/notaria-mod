@@ -104,9 +104,7 @@ module.exports = {
 
           valueslist[guildid][userid]['value'] = newvalue;
 
-          console.log(valueslist[guildid][userid]['value']);
-
-          fs.writeFile('./values.json', JSON.stringify(valueslist));
+          fs.writeFileSync('./values.json', JSON.stringify(valueslist));
 
           commandmodules.setmessage(`${toTitleCase(label.replace('`', '\\`'))} changed!`, `${toTitleCase(label.replace('`', '\\`'))} changed from \`${oldvalue}\` to \`${newvalue}\` for ${user}!`, message);
         });

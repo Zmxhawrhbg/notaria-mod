@@ -38,9 +38,7 @@ module.exports = {
 
         guildsettings[guildid].prefix = newprefix;
 
-        console.log(guildsettings[guildid]['prefix']);
-
-        fs.writeFile('./guildsettings.json', JSON.stringify(guildsettings));
+        fs.writeFileSync('./guildsettings.json', JSON.stringify(guildsettings));
 
         commandmodules.setmessage('Prefix changed!', `Prefix changed from \`${oldprefix}\` to \`${newprefix}\`!`, message);
 
